@@ -398,9 +398,9 @@ if (foodTaken > 0 && foodTaken % 5 == 0 && !bonusFoodActive) {
 
         SDL_Rect bonusFoodRect = {bonusFoodX, bonusFoodY, GRID_SIZE, GRID_SIZE};
         SDL_Rect bmpRect1 = {0, 70, 700, 14};
-    SDL_Rect bmpRect2 = {950, 40, 10, 320};
-    SDL_Rect bmpRect3 = {20, 350, 14, SCREEN_HEIGHT/2};
-    SDL_Rect bmpRect4 = {380, 480, SCREEN_WIDTH /2,14};
+        SDL_Rect bmpRect2 = {950, 40, 10, 320};
+        SDL_Rect bmpRect3 = {20, 350, 14, SCREEN_HEIGHT/2};
+        SDL_Rect bmpRect4 = {380, 480, SCREEN_WIDTH /2,14};
 
         if (!SDL_HasIntersection(&bonusFoodRect, &bmpRect1) &&
             !SDL_HasIntersection(&bonusFoodRect, &bmpRect2) &&
@@ -674,7 +674,6 @@ void renderFinalScore() {
 
                 SDL_Rect retryRect = {(1000 - 250) / 2, yStartPos, 250, lineHeight};
                 
-
                 if (mouseX >= retryRect.x && mouseX < retryRect.x + retryRect.w ||
                     mouseY >= retryRect.y && mouseY < retryRect.y + retryRect.h) {
                     retryClicked = true;
